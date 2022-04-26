@@ -1,4 +1,4 @@
-model_version = 'v0.3.4';
+model_version = 'v0.3.6';
 model_name = 'Base FMS';
 
 %% load model configuration
@@ -29,6 +29,7 @@ FMS_PARAM_VALUE.ROLL_PITCH_LIM = single(pi/6);
 FMS_PARAM_VALUE.L1 = single(10);
 FMS_PARAM_VALUE.CRUISE_SPEED = single(5);
 FMS_PARAM_VALUE.TAKEOFF_H = single(1.5);
+FMS_PARAM_VALUE.ACCEPT_R = single(0.5);
 
 FMS_PARAM = Simulink.Parameter(FMS_PARAM_VALUE);
 FMS_PARAM.CoderInfo.StorageClass = 'ExportedGlobal';
